@@ -83,6 +83,5 @@ function hidePage(page) {
          console.info("# " + (index + 1) + " " + skill);
      }
 
-     skills.forEach(printSkill);
  }
  showSkills();
