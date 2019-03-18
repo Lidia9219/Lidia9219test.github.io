@@ -71,3 +71,5 @@ function hidePage(page) {
      }
  }
  initMenu();
+
+ 
