@@ -77,7 +77,7 @@ function hidePage(page) {
 
      var htmlSkills = skills.map(function(skill, index) {
         console.info("# " + (index + 1) + " " + skill);
-        return '<li>' + skill + '</li>';
+        return '<li>' + skill.toUpperCase () + '</li>';
     });
     console.info(htmlSkills[2]);
 
