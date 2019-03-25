@@ -73,16 +73,19 @@ function hidePage(page) {
  initMenu();
 
  function showSkills() {
-     var skills = ['html', 'css', 'js'];
+     var allEndorsements = [8, 12, 19, 3];
+     var skills = ['html', 'css', 'js', 'nodejs'];
 
      var htmlSkills = skills.map(function(skill, index) {
-        console.info("# " + (index + 1) + " " + skill);
-        return '<li>' + skill.toUpperCase () + '</li>';
+         var endorsements = ' <span class= "endorsement">(' + allEndorsements[index] + ')</span>';
+        return '<li>' + skill.toUpperCase() + endorsements + '</li>';
     });
-    console.info(htmlSkills[2]);
 
     var ul = document.querySelector('#skills-page ul');
-    console.warn(ul);
     ul.innerHTML = htmlSkills.join(' ');
  }
+
+ hideAllPages();
+ showPage('skills-page');
+
  showSkills();
